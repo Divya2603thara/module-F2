@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Divya Module Test F2 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Images with Flex Box -->
+    <div class="flex-container">
+        <div>
+            <button id="img-1" onclick="openFormFunction()"><img class="img" src="./images/img1.jpeg" alt="img1"></button>
+        </div>
+
+        <div>
+            <button id="img-2" onclick="displayFormInfoFunction()"><img class="img" src="./images/img2.jpeg"
+                    alt="img2"></button>
+        </div>
+
+        <div>
+            <button id="img-3" onclick="displayDiceWthScore()"><img class="img" src="./images/img3.jpeg" alt="img3"></button>
+        </div>
+
+        <div>
+            <button id="img-4" onclick="generateCouponCodeFunction()"><img class="img" src="./images/img4.jpeg"
+                    alt="img4"></button>
+        </div>
+    </div>
+
+    <!-- Form Group -->
+    <div class="form-Group hidden" id="form">
+        <form action="/">
+            <label for="name">Name: </label>
+            <input type="text" id="name" required>
+
+            <label for="userName">User Name: </label>
+            <input type="text" id="userName" required>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" required><br><br>
+
+            <button id="sumbitBtn" type="submit" onclick="submitFormInfoFunction()">Submit</button>
+        </form>
+    </div>
+
+    <!-- Display Form info -->
+    <div class="displayformInfo hidden" id="displayInfo">
+        <h2>Your information is</h2><br>
+        <span id="info"></span><br><br>
+        <p>Click on next Image to proceed further</p>
+    </div>
+
+
+    <div id="msgWala">
+        <h2 id="msgDispaly"></h2>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
